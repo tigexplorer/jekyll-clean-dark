@@ -17,12 +17,13 @@
 //********************************************************
 
 // Several accent colors, choose one or create your own!
-$accent-color: #3CA2A2;    // original =)
+//$accent-color: #3CA2A2;    // original =)
 //$accent-color: #C38FD6;  // velvet
 //$accent-color: #8FD6B3;  // greenish
 //$accent-color: #35B4DE;  // bluish
 //$accent-color: #D2E354;  // yellowish
 //$accent-color: #52B54B;  // green
+$accent-color: #ffd033;
 
 $font-color: #dddddd;
 $background-color: #292929;
@@ -31,7 +32,7 @@ $footer-background-color: #292c2f;
 $note-color: #87CEFA;
 $warning-color: #ffff00;
 // use this or pick any from /css/pics/background folder or from transparenttextures.com
-$background-pattern: 'random-grey-variations.png';
+$background-pattern: 'xv.png';
 
 //********************************************************
 //                  Common styles
@@ -182,7 +183,7 @@ h2.post-title {
   text-align: left;
 }
 div.post-meta {
-  border-width: 1px 0;
+  border-width: 1px 0 0;
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
@@ -256,7 +257,7 @@ nav {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   padding: 0 10px !important;
-  border-top: 3px #3CA2A2 solid;
+  border-top: 3px #ffd033 solid;
   border-bottom: 1px #000000 solid;
   .navbar-brand, .nav-link {
    color: #777;
@@ -453,4 +454,3 @@ table.inner-borders {
     line-height: 1.8;
   }
 }
-
