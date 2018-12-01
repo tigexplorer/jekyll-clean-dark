@@ -16,17 +16,19 @@ copyright: 2015-2018
 share:
   facebook: true
   twitter: true
-  gplus: false
-  linkedin: false
-  pinterest: false
-  email: false
+  gplus: true
+  linkedin: true
+  pinterest: true
+  email: true
 
 social:
+  mastodon: '@JoergSorge'
   github: tigexplorer
-  stackoverflow: ''
+  stackoverflow:
   linkedin:
-  instagram: ''
-  lastfm: ''
+  instagram:
+  lastfm:
+  twitter: JoergSorge
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
@@ -38,7 +40,7 @@ yandex_metrica:
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: 
+disqus:
 comments: false
 
 permalink: /:year/:month/:title

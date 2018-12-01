@@ -2,6 +2,18 @@
 
 <ul class="social-media">
 
+   {% if site.social.mastodon %}
+    <li>
+     <a title="{{ site.social.mastodon }} on Mastodon" href="https://social.bau-ha.us/{{ site.social.mastodon }}" target="_blank"><i class="fab fa-mastodon fa-2x"></i></a>
+    </li>
+  {% endif %}
+
+  {% if site.social.twitter %}
+    <li>
+      <a title="{{ site.social.twitter }} on Twitter" href="https://twitter.com/{{ site.social.twitter }}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </li>
+  {% endif %}
+
   {% if site.social.github %}
     <li>
       <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}" target="_blank"><i class="fab fa-github fa-2x"></i></a>
