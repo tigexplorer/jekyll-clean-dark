@@ -1,28 +1,28 @@
 # Jekyll configuration
 
-name: Blog Name
-description: Software Developer
+name: Pilgerweg
+description: Schritt für Schritt
 
 # Url is currently only used only for the RSS feed in feed.xml
-url: http://streetturtle.github.io
+url: http://pilgerweg-21.de
 #url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
-baseurl: '/jekyll-clean-dark'
+baseurl: ''
 
-author: Pavel Makhov
+author: Jörg Sorge
 copyright: 2015-2018
 
 share:
   facebook: true
   twitter: true
-  gplus: true
-  linkedin: true
-  pinterest: true
-  email: true
+  gplus: false
+  linkedin: false
+  pinterest: false
+  email: false
 
 social:
-  github: streetturtle
+  github: tigexplorer
   stackoverflow: ''
   linkedin:
   instagram: ''
@@ -38,7 +38,7 @@ yandex_metrica:
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: streetturtle
+disqus: 
 comments: false
 
 permalink: /:year/:month/:title
