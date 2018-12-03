@@ -40,13 +40,14 @@ $background-pattern: 'xv.png';
 body {
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
+  font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .card {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .main-page {
   width: 75%;
