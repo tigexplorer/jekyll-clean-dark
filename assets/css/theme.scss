@@ -40,7 +40,7 @@ $background-pattern: 'xv.png';
 body {
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
-  font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 16px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .card {
   background-color: $post-panel-color;
@@ -188,6 +188,7 @@ div.post-meta {
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
+  padding-top: 3;
   ul {
     display: inline;
     padding-left: 0;
