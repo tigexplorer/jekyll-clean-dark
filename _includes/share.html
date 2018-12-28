@@ -2,6 +2,16 @@
 
 <div class="share-bar">
   <ul class="share-buttons">
+
+    {% if site.share.clipboard-url %}
+    Dieser Beitrag kann Trackingfrei geteilt werden.<br>
+    Klicke auf das Zwischenablage-Symbol, um den URL in die Zwischenablage zu kopieren. <br>
+    Wechsle dann zum Netzwerk deiner Wahl und füge den URL aus der Zwischenablage wieder ein.
+    <li class="share-envelope">
+        {% include share-url-via-clipboard.html %}
+    </li>
+    {% endif %}
+
     {% if site.share.facebook %}
       <li class="share-facebook">
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url}}"

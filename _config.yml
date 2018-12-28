@@ -1,7 +1,7 @@
 # Jekyll configuration
 
 name:
-description: 
+description:
 
 # Url is currently only used only for the RSS feed in feed.xml
 url:
@@ -11,9 +11,10 @@ url:
 baseurl: ''
 
 author:
-copyright: 2015-2018
+copyright: 
 
 share:
+  clipboard-url: true
   facebook: true
   twitter: true
   gplus: true

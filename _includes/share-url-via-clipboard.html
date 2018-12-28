@@ -1,0 +1,33 @@
+<!--
+Copy the url to clipboard and fade in texarea with url
+Thanx to https://stackoverflow.com/questions/40958613/how-to-copy-url-on-button-click
+-->
+<script type="text/javascript">
+  function Copy() {
+    var Url = document.getElementById("url");
+    Url.innerHTML = window.location.href;
+    console.log(Url.innerHTML)
+    fadeIn();
+    Url.select();
+    document.execCommand("copy");
+  }
+  function fadeIn() {
+    document.getElementById('url').style.opacity = 0;
+    document.getElementById('url').style.display = 'inline';
+    setTimeout(show, 400);
+  }
+  function show() {
+    document.getElementById('url').style.opacity = (parseFloat(document.getElementById('url').style.opacity) + 0.1);
+    <!--document.getElementById('value').innerHTML = (document.getElementById('url').style.opacity);-->
+    if (document.getElementById('url').style.opacity < 1) {
+        setTimeout(show, 400);
+    }
+  }
+</script>
+
+<span class="fa-layers fa-fw fa-2x" onclick="Copy();">
+    <i class="far fa-circle"></i>
+    <i class="far fa-clipboard" data-fa-transform="shrink-8"></i>
+</span>
+
+<textarea id="url" class="share-url" rows="1" cols="50"></textarea>
