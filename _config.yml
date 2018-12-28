@@ -23,8 +23,9 @@ share:
   email: true
 
 social:
-  homeweb: ''
-  mastodon: ''
+  homeweb:
+  mastodon:
+  gitlab:
   github:
   stackoverflow:
   linkedin:
