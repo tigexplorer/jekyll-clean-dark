@@ -118,7 +118,13 @@ ul.social-media {
 //                    Share
 //********************************************************
 .share-bar{
+  color: $accent-color;
   text-align: right;
+  border-width: 1px 0 0;
+  border-color: #666666;
+  border-style: solid;
+  margin: 0 0 50px;
+  padding-top: 3;
 }
 
 ul.share-buttons {
@@ -165,6 +171,21 @@ ul.share-buttons {
     -ms-transform: scale(1.3,1.3);
     -o-transform: scale(1.3,1.3);
     transform: scale(1.3,1.3);
+  }
+}
+
+.share-url{
+  display:none;
+  background-color: #292929;
+  color: lightgrey;
+  margin: 0;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  border: 0;
+  bottom: -2px;
+  position: relative;
+  padding: 0 0 2px 1em;
+  p {
+    margin: 0;
   }
 }
 
