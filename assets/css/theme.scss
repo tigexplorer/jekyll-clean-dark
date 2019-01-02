@@ -189,7 +189,7 @@ div.post-meta {
   border-width: 1px 0 0;
   border-color: #666666;
   border-style: solid;
-  margin: 0 0 20px;
+  margin: 0 0 50px;
   padding-top: 3;
   ul {
     display: inline;
@@ -205,6 +205,11 @@ div.post-meta {
     display: inline;
   }
 }
+
+.post-descr {
+    margin-bottom: 0px;
+}
+
 .post-footer {
   height: 40px;
   display: table;
