@@ -34,13 +34,18 @@ $warning-color: #ffff00;
 // use this or pick any from /css/pics/background folder or from transparenttextures.com
 $background-pattern: 'xv.png';
 
+@font-face {
+font-family: 'Open Sans';
+src: url('open-sans/OpenSans-Regular-webfont.woff') format('woff');
+}
+
 //********************************************************
 //                  Common styles
 //********************************************************
 body {
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
-  font: 300 16px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 16px 'Open Sans', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .card {
   background-color: $post-panel-color;
