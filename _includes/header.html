@@ -9,6 +9,40 @@
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
     <meta name="theme-color" content="#222222"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="{{ site.name }}" >
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}">
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}">
+    {% endif %}
+    {% if page.title %}
+    <meta property="og:type" content="article">
+    {% else %}
+    <meta property="og:type" content="blog">
+    {% endif %}
+    {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+    <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.url %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    <meta property="article:author" content="{{ site.url }}/about/">
+    {% endif %}
+    {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag }}">
+    {% endfor %}
+    {% endif %}
+    {% if page.title %}
+    <meta property="og:image" content="{{ site.url }}{{ post_first_image | strip }}">
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/site-stock/auge_warschau.1024.jpg">
+    {% endif %}
     <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/popper.min.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bootstrap4.min.js' | relative_url }}"></script>

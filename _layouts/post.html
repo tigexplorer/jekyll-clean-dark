@@ -1,3 +1,11 @@
+{% capture post_first_image %}
+  {% assign hero_image = page.content | match_regex: '<img .*?src="([^"]+)"' %}
+  {% if hero_image == nil %}
+    {% assign hero_image = "/placeholder-image.png" | prepend: site_base %}
+  {% endif %}
+  {{ hero_image }}
+{% endcapture %}
+
 {% include header.html %}
     <div class="wrapper">
       <div class="content">
